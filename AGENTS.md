@@ -30,10 +30,11 @@
 学生提出一个"易证"的步骤时，用 gap 模板的格式开 issue：
 
 ```bash
-gh issue create --title "[gap] Eq.(12) \$J = 4t^2/U\$" --body-file <临时文件>
+gh issue create --title "[gap] Eq.(12) \$J = 4t^2/U\$" --body-file <临时文件>.md
 ```
 
 正文包含五项：论文怎么说、出发点、目标、验收标准、预计用时。
+正文文件先用 `python3 tools/lint.py <临时文件>.md` 检查，公式规则与仓库中的 Markdown 相同。
 验收标准由学生给出；学生说不清时，帮学生把问题拆小，不要替学生编。
 
 ## 提交
@@ -49,7 +50,8 @@ gh issue create --title "[gap] Eq.(12) \$J = 4t^2/U\$" --body-file <临时文件
 ## 写作格式
 
 - Markdown 中的公式只用 LaTeX：行内 `$4t^2/U$`，单独一行用 `$$...$$` 并前后空行。
-  不用 `²`、`→`、`≫`、`α` 这类 Unicode 字符。提交前运行 `python3 tools/lint.py`。
+  行内公式开头的 `$` 前面留一个空格，紧挨汉字或全角标点时 GitHub 不渲染。
+  不用 `²`、`→`、`≫`、`α` 这类 Unicode 字符。提交前运行 `python3 tools/lint.py`，`--fix` 可自动补空格。
 - 提交信息中的公式写 LaTeX 源码，如 `4t^2/U`。
 - 推导文件一句一行。
 - 检验放在 `checks/`，文件名以 `test_` 开头。

@@ -9,7 +9,7 @@
 
 $$H = -t\sum_{\sigma}\left(c_{1\sigma}^\dagger c_{2\sigma} + c_{2\sigma}^\dagger c_{1\sigma}\right) + U\sum_{i} n_{i\uparrow} n_{i\downarrow}.$$
 
-半满，两个电子，$U \gg t$。
+半满，两个电子， $U \gg t$。
 把跳跃项记为 $T$，相互作用项作为 $H_0$。
 
 ## 低能子空间与中间态
@@ -34,7 +34,7 @@ $$H_\mathrm{eff} = -\frac{1}{U}\, P\, T\, (1-P)\, T\, P.$$
 
 ## 计入两个中间态
 
-单态到两个双占据态的矩阵元大小相同，$|\langle D_i|T|S\rangle|^2 = 2t^2$。
+单态到两个双占据态的矩阵元大小相同， $|\langle D_i|T|S\rangle|^2 = 2t^2$。
 两项相加，单态能量移动 $-4t^2/U$。
 对三重态，两个自旋构型的跳跃振幅相消，这是 Pauli 原理的结果，三重态能量仍为 $0$。
 

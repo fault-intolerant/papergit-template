@@ -11,7 +11,7 @@ body:
   - type: input
     attributes:
       label: 出发点
-      placeholder: 例：Eq.(3)；半满，$U \gg t$
+      placeholder: 例：Eq.(3)；半满， $U \gg t$
     validations:
       required: true
   - type: input
@@ -24,7 +24,7 @@ body:
     attributes:
       label: 验收标准
       description: 哪个检验通过算完成。写不出来时，先把问题拆小。
-      placeholder: 例：两格点精确对角化的能隙，在 $t/U \to 0$ 时趋于 $4t^2/U$
+      placeholder: 例：两格点精确对角化的能隙，在 $t/U \to 0$ 时趋于 $4t^2/U$（公式前留一个空格）
     validations:
       required: true
   - type: input
