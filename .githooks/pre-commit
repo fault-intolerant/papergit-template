@@ -1,0 +1,6 @@
+#!/bin/sh
+# 提交前检查本次改动的 Markdown 文件中的公式写法
+PY=$(command -v python3 || command -v python)
+files=$(git diff --cached --name-only --diff-filter=ACMR -- '*.md')
+[ -z "$files" ] && exit 0
+exec "$PY" tools/lint.py $files

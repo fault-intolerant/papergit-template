@@ -1,0 +1,4 @@
+#!/bin/sh
+# 检查提交信息的格式
+PY=$(command -v python3 || command -v python)
+exec "$PY" tools/check_commit_msg.py "$1"

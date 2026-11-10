@@ -1,0 +1,35 @@
+name: gap
+description: 论文中一个需要自己补全的步骤
+title: "[gap] Eq.(?) "
+body:
+  - type: textarea
+    attributes:
+      label: 论文怎么说
+      description: 论文的原话，以及自己目前得到的结果（如有）。公式用 LaTeX 写，如 $4t^2/U$。
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: 出发点
+      placeholder: 例：Eq.(3)；半满，$U \gg t$
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: 目标
+      placeholder: 例：Eq.(12)
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: 验收标准
+      description: 哪个检验通过算完成。写不出来时，先把问题拆小。
+      placeholder: 例：两格点精确对角化的能隙，在 $t/U \to 0$ 时趋于 $4t^2/U$
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: 预计用时
+      placeholder: 例：2 小时
+    validations:
+      required: true

@@ -1,0 +1,12 @@
+
+# 第一行：<类型>(<论断编号>): <确立了什么>
+# 正文：
+#   How:   <方法，一两行>
+#   Check: <哪个检验，结果>
+#   错因： <deadend 必填：错在哪里，当时为什么这样想>
+#   Refs:  #<issue 号>
+#
+# 类型：check 新增检验；derive 推导步；deadend 推错的一步；errata 论文的错误；
+#       notation 修改约定；fix 改正自己之前的错误；setup: <说明> 用于整理仓库
+# 公式写 LaTeX 源码，如 4t^2/U。
+# AI 参与过的提交，末尾加 Assisted-by: <工具名>
