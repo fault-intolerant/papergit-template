@@ -24,7 +24,7 @@ gh auth login
 
 每读一篇新论文，在一个空文件夹中打开 AI 助手，对它说：
 
-> 用 gh 从 `hmx21/papergit-template` 模板新建一个私有仓库，名字叫 `<论文简称>`，克隆到当前文件夹，然后按仓库中的 `AGENTS.md` 完成初始化。
+> 用 gh 从 `fault-intolerant/papergit-template` 模板新建一个私有仓库，名字叫 `<论文简称>`，克隆到当前文件夹，然后按仓库中的 `AGENTS.md` 完成初始化。
 
 AI 会运行 `tools/setup.sh`。这个脚本在仓库中建一个 Python 虚拟环境 `.venv` 并安装依赖，启用提交检查，然后运行示范检验。
 
